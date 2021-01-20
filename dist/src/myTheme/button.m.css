@@ -1,0 +1,21 @@
+@import "./variables.css";
+
+.root {
+  height: 50px;
+  width: 50px;
+  color: white;
+  font-size: 1rem;
+  background-color: var(--petrol60k);
+}
+
+.pressed {
+}
+
+.popup {
+}
+
+.disabled {
+}
+
+.label {
+}

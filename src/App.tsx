@@ -1,14 +1,16 @@
 import React from "react";
-import { ReactDojoAnker } from "./ReactDojoAnker";
 
-const App: React.FunctionComponent = () => {
-  return (
-    <ReactDojoAnker
-      onClick={() => {
-        alert("call back from React");
-      }}
-    ></ReactDojoAnker>
-  );
-};
+class App extends React.Component {
+  render() {
+    const daiButton = <dai-button-wrapper widgetId="dai-button" />;
+    return <div>{daiButton}</div>;
+  }
+
+  componentDidMount() {
+    document.getElementById("dai-button")?.addEventListener("click", () => {
+      alert("test");
+    });
+  }
+}
 
 export default App;
