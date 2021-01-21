@@ -175,7 +175,7 @@ module.exports = (env) => {
       publicPath: "/",
       contentBase: path.resolve(__dirname, "./output/dist"),
       hot: true,
-      open: true,
+      open: false,
       port: 9996,
     },
   };

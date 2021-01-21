@@ -13,7 +13,7 @@ const App = factory(function App({ middleware: { theme }}) {
 
     return (
         <div>
-            <Wrapper />
+            <Wrapper onClick={() => {}}/>
         </div>
     );
 })
