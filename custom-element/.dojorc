@@ -1,0 +1,14 @@
+{
+	"build-theme": {
+		"themes": ["custom"]
+	},
+	"build-widget": {
+		"prefix": "demo",
+		"widgets": [
+			"src/widgets/Wrapper"
+		]
+	},
+	"build-app": {},
+	"test-intern": {},
+	"create-app": {}
+}

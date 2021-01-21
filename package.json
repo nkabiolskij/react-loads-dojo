@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "test",
   "scripts": {
+    "build:custom-element": "cd custom-element && npm run build:ce",
     "dev": "webpack serve --config ./webpack.config.js --mode development --env dev --devtool source-map",
     "build": "webpack --config ./webpack.config.js --mode production --env prod"
   },
