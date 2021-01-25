@@ -2,13 +2,14 @@ import React from "react";
 
 class App extends React.Component {
   render() {
-    const daiButton = <dai-button-wrapper widgetId="dai-button" />;
-    return <div>{daiButton}</div>;
+    return (
+      <demo-wrapper id="demo-button"></demo-wrapper>
+    );
   }
 
   componentDidMount() {
-    document.getElementById("dai-button")?.addEventListener("click", () => {
-      alert("test");
+    document.getElementById("demo-button")?.addEventListener("click", () => {
+      console.log('here');
     });
   }
 }

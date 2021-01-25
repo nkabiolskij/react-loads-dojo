@@ -110,24 +110,26 @@ module.exports = (env) => {
       }),
       new AddAssetHtmlPlugin([
         {
-          filepath: require.resolve("./customElements/button-wrapper-1.0.0.js"),
+          filepath: require.resolve(
+            "./custom-element/output/theme/custom/custom-1.0.0.js"
+          ),
           publicPath: "",
         },
         {
           filepath: require.resolve(
-            "./customElements/button-wrapper-1.0.0.css"
+            "./custom-element/output/theme/custom/custom-1.0.0.css"
           ),
           publicPath: "",
           typeOfAsset: "css",
         },
         {
-          filepath: require.resolve("./dist/src/myTheme/index.css"),
+          filepath: require.resolve("./custom-element/output/dist/wrapper-1.0.0.js"),
           publicPath: "",
-          typeOfAsset: "css",
         },
         {
-          filepath: require.resolve("./dist/src/myTheme/index.js"),
+          filepath: require.resolve("./custom-element/output/dist/wrapper-1.0.0.css"),
           publicPath: "",
+          typeOfAsset: "css",
         },
         // {
         //   filepath: require.resolve(
@@ -173,7 +175,7 @@ module.exports = (env) => {
       publicPath: "/",
       contentBase: path.resolve(__dirname, "./output/dist"),
       hot: true,
-      open: true,
+      open: false,
       port: 9996,
     },
   };
